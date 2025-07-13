@@ -1297,7 +1297,7 @@ class band_game:
         global setup_bgp
 
         wi,he=band_game.get_width_height(_menu_setup)
-        setup_image_path = './bg/band.jpg'
+        setup_image_path = './bg/setup.jpg'
         setup_backgroud_image=Image.open(setup_image_path)
         setup_backgroud_image=setup_backgroud_image.resize((wi,he))
         setup_bgi=setup_backgroud_image
@@ -1348,7 +1348,7 @@ class band_game:
         global game_setup_bgp
 
         wi,he=band_game.get_width_height(_menu_game_setup)
-        game_setup_image_path = './bg/band.jpg'
+        game_setup_image_path = './bg/setup.jpg'
         game_setup_backgroud_image=Image.open(game_setup_image_path)
         game_setup_backgroud_image=game_setup_backgroud_image.resize((wi,he))
         game_setup_bgi=game_setup_backgroud_image
@@ -1408,6 +1408,8 @@ class band_game:
         game_choice_backgroud_label=Label(master=_menu_game_choice,image=game_choice_bgp)
         game_choice_bgl=game_choice_backgroud_label
         game_choice_bgl.place(relwidth=1,relheight=1)
+
+    #定义游戏音乐
 
     def game_music_start():
 
