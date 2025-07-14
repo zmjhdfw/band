@@ -1314,7 +1314,7 @@ class band_game:
         global save_bgp
 
         wi,he=band_game.get_width_height(_menu_save)
-        save_image_path='./bg/band.jpg'
+        save_image_path='./bg/save.jpg'
         save_backgroud_image=Image.open(save_image_path)
         save_backgroud_image=save_backgroud_image.resize((wi,he))
         save_bgi=save_backgroud_image
@@ -1331,7 +1331,7 @@ class band_game:
         global load_bgp
 
         wi,he=band_game.get_width_height(_menu_load)
-        load_image_path='./bg/band.jpg'
+        load_image_path='./bg/load.jpg'
         load_backgroud_image=Image.open(load_image_path)
         load_backgroud_image=load_backgroud_image.resize((wi,he))
         load_bgi=load_backgroud_image
@@ -1365,7 +1365,7 @@ class band_game:
         global game_save_bgp
 
         wi,he=band_game.get_width_height(_menu_game_save)
-        game_save_image_path = './bg/band.jpg'
+        game_save_image_path = './bg/save.jpg'
         game_save_backgroud_image=Image.open(game_save_image_path)
         game_save_backgroud_image=game_save_backgroud_image.resize((wi,he))
         game_save_bgi=game_save_backgroud_image
@@ -1382,7 +1382,7 @@ class band_game:
         global game_load_bgp
 
         wi,he=band_game.get_width_height(_menu_game_load)
-        game_load_image_path = './bg/band.jpg'
+        game_load_image_path = './bg/load.jpg'
         game_load_backgroud_image=Image.open(game_load_image_path)
         game_load_backgroud_image=game_load_backgroud_image.resize((wi,he))
         game_load_bgi=game_load_backgroud_image
