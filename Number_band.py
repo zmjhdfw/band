@@ -32,19 +32,19 @@ class band_game:
         #设置背景自适应主菜单窗口大小
         band_game.set_menu_backgroud()
         #设置主菜单的开始游戏按钮并自适应主菜单窗口大小
-        menu_game=tk.Button(text='开始游戏',command=band_game.band_gane_menu_game)
+        menu_game=tk.Button(text='开始游戏',borderwidth=0,command=band_game.band_gane_menu_game)
         menu_game.place(x=75,y=900,width=108,height=81)
         #设置主菜单的退出按钮并自适应主菜单窗口大小
-        menu_exit=tk.Button(text='退出',command=band_game.band_game_menu_exit)
+        menu_exit=tk.Button(text='退出',borderwidth=0,command=band_game.band_game_menu_exit)
         menu_exit.place(x=1500,y=900,width=108,height=81)
         #设置主菜单的设置按钮并自适应窗口大小
-        menu_setup=tk.Button(text='设置',command=band_game.band_game_menu_setup)
+        menu_setup=tk.Button(text='设置',borderwidth=0,command=band_game.band_game_menu_setup)
         menu_setup.place(x=450,y=900,width=108,height=81)
         #设置主菜单的存取游戏按钮并自适应窗口大小
-        menu_save=tk.Button(text='存取游戏',command=band_game.band_game_menu_save)
+        menu_save=tk.Button(text='存取游戏',borderwidth=0,command=band_game.band_game_menu_save)
         menu_save.place(x=825,y=900,width=108,height=81)
         #设置主菜单的读取游戏按钮并自适应窗口大小
-        menu_load=tk.Button(text='读取游戏',command=band_game.band_game_menu_load)
+        menu_load=tk.Button(text='读取游戏',borderwidth=0,command=band_game.band_game_menu_load)
         menu_load.place(x=1125,y=900,width=108,height=81)
         #消息循环
         root.mainloop()
@@ -66,19 +66,19 @@ class band_game:
         #设置背景自适应主菜单窗口大小
         band_game.set_game_backgroud()
         #设置游戏的返回按钮并自适应主菜单窗口大小
-        _menu_game_back=tk.Button(text='返回',command=band_game.band_game_menu_game_back)
+        _menu_game_back=tk.Button(text='返回',borderwidth=0,command=band_game.band_game_menu_game_back)
         _menu_game_back.place(x=1500,y=900,width=108,height=81)
         #设置游戏的设置按钮并自适应窗口大小
-        _menu_game_setup=tk.Button(text='设置',command=band_game.band_game_menu_game_setup)
+        _menu_game_setup=tk.Button(text='设置',borderwidth=0,command=band_game.band_game_menu_game_setup)
         _menu_game_setup.place(x=75,y=900,width=108,height=81)
         #设置游戏的存取游戏按钮并自适应窗口大小
-        _menu_game_save=tk.Button(text='存取游戏',command=band_game.band_game_menu_game_save)
+        _menu_game_save=tk.Button(text='存取游戏',borderwidth=0,command=band_game.band_game_menu_game_save)
         _menu_game_save.place(x=450,y=900,width=108,height=81)
         #设置游戏的读取游戏按钮并自适应窗口大小
-        _menu_game_load=tk.Button(text='读取游戏',command=band_game.band_game_menu_game_load)
+        _menu_game_load=tk.Button(text='读取游戏',borderwidth=0,command=band_game.band_game_menu_game_load)
         _menu_game_load.place(x=1125,y=900,width=108,height=81)
         #定义一个开始按钮并自适应窗口大小
-        _menu_game_start=tk.Button(text='开始',command=band_game.band_game_menu_game_start,state=tk.DISABLED)
+        _menu_game_start=tk.Button(text='开始',borderwidth=0,command=band_game.band_game_menu_game_start,state=tk.DISABLED)
         _menu_game_start.place(x=750,y=900,width=108,height=81)
         #定义一个输入框并自适应窗口大小
         _menu_game_entry=tk.Entry()
@@ -105,7 +105,7 @@ class band_game:
         _menu_game_choice_use=tk.Label(text='已用机会:')
         _menu_game_choice_use.place(x=1018,y=600,width=108,height=81)
         #定义选择难度按钮并自适应窗口大小
-        _menu_game_choice=tk.Button(text='选择难度',command=band_game.band_game_menu_game_choice)
+        _menu_game_choice=tk.Button(text='选择难度',borderwidth=0,command=band_game.band_game_menu_game_choice)
         _menu_game_choice.place(x=750,y=750,width=108,height=81)
         _menu_game.mainloop()
 
@@ -125,11 +125,11 @@ class band_game:
         #设置设置背景自适应窗口大小
         band_game.set_game_choice_backgroud()
         #定义返回按钮及大小
-        _menu_game_choice_option1=tk.Button(text='简单',command=band_game.band_game_menu_game_choice_option1)
+        _menu_game_choice_option1=tk.Button(text='简单',borderwidth=0,command=band_game.band_game_menu_game_choice_option1)
         _menu_game_choice_option1.place(x=25,y=500,width=108,height=81)
-        _menu_game_choice_option2=tk.Button(text='普通',command=band_game.band_game_menu_game_choice_option2)
+        _menu_game_choice_option2=tk.Button(text='普通',borderwidth=0,command=band_game.band_game_menu_game_choice_option2)
         _menu_game_choice_option2.place(x=430,y=500,width=108,height=81)
-        _menu_game_choice_option3=tk.Button(text='困难',command=band_game.band_game_menu_game_choice_option3)
+        _menu_game_choice_option3=tk.Button(text='困难',borderwidth=0,command=band_game.band_game_menu_game_choice_option3)
         _menu_game_choice_option3.place(x=850,y=500,width=108,height=81)
         #消息循环
         _menu_game_choice.mainloop()
@@ -152,19 +152,19 @@ class band_game:
         #设置背景自适应主菜单窗口大小
         band_game.set_game_backgroud()
         #设置游戏的返回按钮并自适应主菜单窗口大小
-        _menu_game_back=tk.Button(text='返回',command=band_game.band_game_menu_game_back)
+        _menu_game_back=tk.Button(text='返回',borderwidth=0,command=band_game.band_game_menu_game_back)
         _menu_game_back.place(x=1500,y=900,width=108,height=81)
         #设置游戏的设置按钮并自适应窗口大小
-        _menu_game_setup=tk.Button(text='设置',command=band_game.band_game_menu_game_setup)
+        _menu_game_setup=tk.Button(text='设置',borderwidth=0,command=band_game.band_game_menu_game_setup)
         _menu_game_setup.place(x=75,y=900,width=108,height=81)
         #设置游戏的存取游戏按钮并自适应窗口大小
-        _menu_game_save=tk.Button(text='存取游戏',command=band_game.band_game_menu_game_save)
+        _menu_game_save=tk.Button(text='存取游戏',borderwidth=0,command=band_game.band_game_menu_game_save)
         _menu_game_save.place(x=450,y=900,width=108,height=81)
         #设置游戏的读取游戏按钮并自适应窗口大小
-        _menu_game_load=tk.Button(text='读取游戏',command=band_game.band_game_menu_game_load)
+        _menu_game_load=tk.Button(text='读取游戏',borderwidth=0,command=band_game.band_game_menu_game_load)
         _menu_game_load.place(x=1125,y=900,width=108,height=81)
         #定义一个开始按钮并自适应窗口大小
-        _menu_game_start=tk.Button(text='开始',command=band_game.band_game_menu_game_start)
+        _menu_game_start=tk.Button(text='开始',borderwidth=0,command=band_game.band_game_menu_game_start)
         _menu_game_start.place(x=750,y=900,width=108,height=81)
         #定义一个输入框并自适应窗口大小
         _menu_game_entry=tk.Entry()
@@ -191,7 +191,7 @@ class band_game:
         _menu_game_choice_use=tk.Label(text='已用机会:')
         _menu_game_choice_use.place(x=1018,y=600,width=108,height=81)
         #定义选择难度按钮并自适应窗口大小
-        _menu_game_choice=tk.Button(text='选择难度',command=band_game.band_game_menu_game_choice)
+        _menu_game_choice=tk.Button(text='选择难度',borderwidth=0,command=band_game.band_game_menu_game_choice)
         _menu_game_choice.place(x=750,y=750,width=108,height=81)
         _menu_game.mainloop()
 
@@ -213,19 +213,19 @@ class band_game:
         #设置背景自适应主菜单窗口大小
         band_game.set_game_backgroud()
         #设置游戏的返回按钮并自适应主菜单窗口大小
-        _menu_game_back=tk.Button(text='返回',command=band_game.band_game_menu_game_back)
+        _menu_game_back=tk.Button(text='返回',borderwidth=0,command=band_game.band_game_menu_game_back)
         _menu_game_back.place(x=1500,y=900,width=108,height=81)
         #设置游戏的设置按钮并自适应窗口大小
-        _menu_game_setup=tk.Button(text='设置',command=band_game.band_game_menu_game_setup)
+        _menu_game_setup=tk.Button(text='设置',borderwidth=0,command=band_game.band_game_menu_game_setup)
         _menu_game_setup.place(x=75,y=900,width=108,height=81)
         #设置游戏的存取游戏按钮并自适应窗口大小
-        _menu_game_save=tk.Button(text='存取游戏',command=band_game.band_game_menu_game_save)
+        _menu_game_save=tk.Button(text='存取游戏',borderwidth=0,command=band_game.band_game_menu_game_save)
         _menu_game_save.place(x=450,y=900,width=108,height=81)
         #设置游戏的读取游戏按钮并自适应窗口大小
-        _menu_game_load=tk.Button(text='读取游戏',command=band_game.band_game_menu_game_load)
+        _menu_game_load=tk.Button(text='读取游戏',borderwidth=0,command=band_game.band_game_menu_game_load)
         _menu_game_load.place(x=1125,y=900,width=108,height=81)
         #定义一个开始按钮并自适应窗口大小
-        _menu_game_start=tk.Button(text='开始',command=band_game.band_game_menu_game_start)
+        _menu_game_start=tk.Button(text='开始',borderwidth=0,command=band_game.band_game_menu_game_start)
         _menu_game_start.place(x=750,y=900,width=108,height=81)
         #定义一个输入框并自适应窗口大小
         _menu_game_entry=tk.Entry()
@@ -252,7 +252,7 @@ class band_game:
         _menu_game_choice_use=tk.Label(text='已用机会:')
         _menu_game_choice_use.place(x=1018,y=600,width=108,height=81)
         #定义选择难度按钮并自适应窗口大小
-        _menu_game_choice=tk.Button(text='选择难度',command=band_game.band_game_menu_game_choice)
+        _menu_game_choice=tk.Button(text='选择难度',borderwidth=0,command=band_game.band_game_menu_game_choice)
         _menu_game_choice.place(x=750,y=750,width=108,height=81)
         _menu_game.mainloop()
 
@@ -274,19 +274,19 @@ class band_game:
         #设置背景自适应主菜单窗口大小
         band_game.set_game_backgroud()
         #设置游戏的返回按钮并自适应主菜单窗口大小
-        _menu_game_back=tk.Button(text='返回',command=band_game.band_game_menu_game_back)
+        _menu_game_back=tk.Button(text='返回',borderwidth=0,command=band_game.band_game_menu_game_back)
         _menu_game_back.place(x=1500,y=900,width=108,height=81)
         #设置游戏的设置按钮并自适应窗口大小
-        _menu_game_setup=tk.Button(text='设置',command=band_game.band_game_menu_game_setup)
+        _menu_game_setup=tk.Button(text='设置',borderwidth=0,command=band_game.band_game_menu_game_setup)
         _menu_game_setup.place(x=75,y=900,width=108,height=81)
         #设置游戏的存取游戏按钮并自适应窗口大小
-        _menu_game_save=tk.Button(text='存取游戏',command=band_game.band_game_menu_game_save)
+        _menu_game_save=tk.Button(text='存取游戏',borderwidth=0,command=band_game.band_game_menu_game_save)
         _menu_game_save.place(x=450,y=900,width=108,height=81)
         #设置游戏的读取游戏按钮并自适应窗口大小
-        _menu_game_load=tk.Button(text='读取游戏',command=band_game.band_game_menu_game_load)
+        _menu_game_load=tk.Button(text='读取游戏',borderwidth=0,command=band_game.band_game_menu_game_load)
         _menu_game_load.place(x=1125,y=900,width=108,height=81)
         #定义一个开始按钮并自适应窗口大小
-        _menu_game_start=tk.Button(text='开始',command=band_game.band_game_menu_game_start)
+        _menu_game_start=tk.Button(text='开始',borderwidth=0,command=band_game.band_game_menu_game_start)
         _menu_game_start.place(x=750,y=900,width=108,height=81)
         #定义一个输入框并自适应窗口大小
         _menu_game_entry=tk.Entry()
@@ -313,7 +313,7 @@ class band_game:
         _menu_game_choice_use=tk.Label(text='已用机会:')
         _menu_game_choice_use.place(x=1018,y=600,width=108,height=81)
         #定义选择难度按钮并自适应窗口大小
-        _menu_game_choice=tk.Button(text='选择难度',command=band_game.band_game_menu_game_choice)
+        _menu_game_choice=tk.Button(text='选择难度',borderwidth=0,command=band_game.band_game_menu_game_choice)
         _menu_game_choice.place(x=750,y=750,width=108,height=81)
         _menu_game.mainloop()
 
@@ -354,7 +354,7 @@ class band_game:
                 if game_result_info == 'yes':
                     _menu_game.deiconify()
                     _menu_game_count=0
-                    _menu_game_start=tk.Button(text='开始',command=band_game.band_game_menu_game_start,state=tk.DISABLED)
+                    _menu_game_start=tk.Button(text='开始',borderwidth=0,command=band_game.band_game_menu_game_start,state=tk.DISABLED)
                     _menu_game_start.place(x=750,y=900,width=108,height=81)
                 elif game_result_info == 'no':
                     sys.exit()
@@ -393,7 +393,7 @@ class band_game:
                 if game_result_info == 'yes':
                     _menu_game.deiconify()
                     _menu_game_count=0
-                    _menu_game_start=tk.Button(text='开始',command=band_game.band_game_menu_game_start,state=tk.DISABLED)
+                    _menu_game_start=tk.Button(text='开始',borderwidth=0,command=band_game.band_game_menu_game_start,state=tk.DISABLED)
                     _menu_game_start.place(x=750,y=900,width=108,height=81)
                 elif game_result_info == 'no':
                     sys.exit()
@@ -432,7 +432,7 @@ class band_game:
                 if game_result_info == 'yes':
                     _menu_game.deiconify()
                     _menu_game_count=0
-                    _menu_game_start=tk.Button(text='开始',command=band_game.band_game_menu_game_start,state=tk.DISABLED)
+                    _menu_game_start=tk.Button(text='开始',borderwidth=0,command=band_game.band_game_menu_game_start,state=tk.DISABLED)
                     _menu_game_start.place(x=750,y=900,width=108,height=81)
                 elif game_result_info == 'no':
                     sys.exit()
@@ -471,7 +471,7 @@ class band_game:
                 if game_result_info == 'yes':
                     _menu_game.deiconify()
                     _menu_game_count=0
-                    _menu_game_start=tk.Button(text='开始',command=band_game.band_game_menu_game_start,state=tk.DISABLED)
+                    _menu_game_start=tk.Button(text='开始',borderwidth=0,command=band_game.band_game_menu_game_start,state=tk.DISABLED)
                     _menu_game_start.place(x=750,y=900,width=108,height=81)
                 elif game_result_info == 'no':
                     sys.exit()
@@ -510,7 +510,7 @@ class band_game:
                 if game_result_info == 'yes':
                     _menu_game.deiconify()
                     _menu_game_count=0
-                    _menu_game_start=tk.Button(text='开始',command=band_game.band_game_menu_game_start,state=tk.DISABLED)
+                    _menu_game_start=tk.Button(text='开始',borderwidth=0,command=band_game.band_game_menu_game_start,state=tk.DISABLED)
                     _menu_game_start.place(x=750,y=900,width=108,height=81)
                 elif game_result_info == 'no':
                     sys.exit()
@@ -549,7 +549,7 @@ class band_game:
                 if game_result_info == 'yes':
                     _menu_game.deiconify()
                     _menu_game_count=0
-                    _menu_game_start=tk.Button(text='开始',command=band_game.band_game_menu_game_start,state=tk.DISABLED)
+                    _menu_game_start=tk.Button(text='开始',borderwidth=0,command=band_game.band_game_menu_game_start,state=tk.DISABLED)
                     _menu_game_start.place(x=750,y=900,width=108,height=81)
                 elif game_result_info == 'no':
                     sys.exit()
@@ -588,7 +588,7 @@ class band_game:
                 if game_result_info == 'yes':
                     _menu_game.deiconify()
                     _menu_game_count=0
-                    _menu_game_start=tk.Button(text='开始',command=band_game.band_game_menu_game_start,state=tk.DISABLED)
+                    _menu_game_start=tk.Button(text='开始',borderwidth=0,command=band_game.band_game_menu_game_start,state=tk.DISABLED)
                     _menu_game_start.place(x=750,y=900,width=108,height=81)
                 elif game_result_info == 'no':
                     sys.exit()
@@ -627,7 +627,7 @@ class band_game:
                 if game_result_info == 'yes':
                     _menu_game.deiconify()
                     _menu_game_count=0
-                    _menu_game_start=tk.Button(text='开始',command=band_game.band_game_menu_game_start,state=tk.DISABLED)
+                    _menu_game_start=tk.Button(text='开始',borderwidth=0,command=band_game.band_game_menu_game_start,state=tk.DISABLED)
                     _menu_game_start.place(x=750,y=900,width=108,height=81)
                 elif game_result_info == 'no':
                     sys.exit()
@@ -666,7 +666,7 @@ class band_game:
                 if game_result_info == 'yes':
                     _menu_game.deiconify()
                     _menu_game_count=0
-                    _menu_game_start=tk.Button(text='开始',command=band_game.band_game_menu_game_start,state=tk.DISABLED)
+                    _menu_game_start=tk.Button(text='开始',borderwidth=0,command=band_game.band_game_menu_game_start,state=tk.DISABLED)
                     _menu_game_start.place(x=750,y=900,width=108,height=81)
                 elif game_result_info == 'no':
                     sys.exit()
@@ -705,7 +705,7 @@ class band_game:
                 if game_result_info == 'yes':
                     _menu_game.deiconify()
                     _menu_game_count=0
-                    _menu_game_start=tk.Button(text='开始',command=band_game.band_game_menu_game_start,state=tk.DISABLED)
+                    _menu_game_start=tk.Button(text='开始',borderwidth=0,command=band_game.band_game_menu_game_start,state=tk.DISABLED)
                     _menu_game_start.place(x=750,y=900,width=108,height=81)
                 elif game_result_info == 'no':
                     sys.exit()
@@ -744,7 +744,7 @@ class band_game:
                 if game_result_info == 'yes':
                     _menu_game.deiconify()
                     _menu_game_count=0
-                    _menu_game_start=tk.Button(text='开始',command=band_game.band_game_menu_game_start,state=tk.DISABLED)
+                    _menu_game_start=tk.Button(text='开始',borderwidth=0,command=band_game.band_game_menu_game_start,state=tk.DISABLED)
                     _menu_game_start.place(x=750,y=900,width=108,height=81)
                 elif game_result_info == 'no':
                     sys.exit()
@@ -783,7 +783,7 @@ class band_game:
                 if game_result_info == 'yes':
                     _menu_game.deiconify()
                     _menu_game_count=0
-                    _menu_game_start=tk.Button(text='开始',command=band_game.band_game_menu_game_start,state=tk.DISABLED)
+                    _menu_game_start=tk.Button(text='开始',borderwidth=0,command=band_game.band_game_menu_game_start,state=tk.DISABLED)
                     _menu_game_start.place(x=750,y=900,width=108,height=81)
                 elif game_result_info == 'no':
                     sys.exit()
@@ -822,7 +822,7 @@ class band_game:
                 if game_result_info == 'yes':
                     _menu_game.deiconify()
                     _menu_game_count=0
-                    _menu_game_start=tk.Button(text='开始',command=band_game.band_game_menu_game_start,state=tk.DISABLED)
+                    _menu_game_start=tk.Button(text='开始',borderwidth=0,command=band_game.band_game_menu_game_start,state=tk.DISABLED)
                     _menu_game_start.place(x=750,y=900,width=108,height=81)
                 elif game_result_info == 'no':
                     sys.exit()
@@ -861,7 +861,7 @@ class band_game:
                 if game_result_info == 'yes':
                     _menu_game.deiconify()
                     _menu_game_count=0
-                    _menu_game_start=tk.Button(text='开始',command=band_game.band_game_menu_game_start,state=tk.DISABLED)
+                    _menu_game_start=tk.Button(text='开始',borderwidth=0,command=band_game.band_game_menu_game_start,state=tk.DISABLED)
                     _menu_game_start.place(x=750,y=900,width=108,height=81)
                 elif game_result_info == 'no':
                     sys.exit()
@@ -900,7 +900,7 @@ class band_game:
                 if game_result_info == 'yes':
                     _menu_game.deiconify()
                     _menu_game_count=0
-                    _menu_game_start=tk.Button(text='开始',command=band_game.band_game_menu_game_start,state=tk.DISABLED)
+                    _menu_game_start=tk.Button(text='开始',borderwidth=0,command=band_game.band_game_menu_game_start,state=tk.DISABLED)
                     _menu_game_start.place(x=750,y=900,width=108,height=81)
                 elif game_result_info == 'no':
                     sys.exit()
@@ -933,7 +933,7 @@ class band_game:
         #设置设置背景自适应窗口大小
         band_game.set_game_setup_backgroud()
         #定义返回按钮及大小
-        _menu_game_setup_back=tk.Button(text='返回',command=band_game.band_game_menu_game_setuup_back)
+        _menu_game_setup_back=tk.Button(text='返回',borderwidth=0,command=band_game.band_game_menu_game_setuup_back)
         _menu_game_setup_back.place(x=1500,y=900,width=108,height=81)
         #消息循环
         _menu_game_setup.mainloop()
@@ -955,19 +955,19 @@ class band_game:
         #设置背景自适应主菜单窗口大小
         band_game.set_game_backgroud()
         #设置游戏的返回按钮并自适应主菜单窗口大小
-        _menu_game_back=tk.Button(text='返回',command=band_game.band_game_menu_game_back)
+        _menu_game_back=tk.Button(text='返回',borderwidth=0,command=band_game.band_game_menu_game_back)
         _menu_game_back.place(x=1500,y=900,width=108,height=81)
         #设置游戏的设置按钮并自适应窗口大小
-        _menu_game_setup=tk.Button(text='设置',command=band_game.band_game_menu_game_setup)
+        _menu_game_setup=tk.Button(text='设置',borderwidth=0,command=band_game.band_game_menu_game_setup)
         _menu_game_setup.place(x=75,y=900,width=108,height=81)
         #设置游戏的存取游戏按钮并自适应窗口大小
-        _menu_game_save=tk.Button(text='存取游戏',command=band_game.band_game_menu_game_save)
+        _menu_game_save=tk.Button(text='存取游戏',borderwidth=0,command=band_game.band_game_menu_game_save)
         _menu_game_save.place(x=450,y=900,width=108,height=81)
         #设置游戏的读取游戏按钮并自适应窗口大小
-        _menu_game_load=tk.Button(text='读取游戏',command=band_game.band_game_menu_game_load)
+        _menu_game_load=tk.Button(text='读取游戏',borderwidth=0,command=band_game.band_game_menu_game_load)
         _menu_game_load.place(x=1125,y=900,width=108,height=81)
         #定义一个开始按钮并自适应窗口大小
-        _menu_game_start=tk.Button(text='开始',command=band_game.band_game_menu_game_start)
+        _menu_game_start=tk.Button(text='开始',borderwidth=0,command=band_game.band_game_menu_game_start)
         _menu_game_start.place(x=750,y=900,width=108,height=81)
         #定义一个输入框并自适应窗口大小
         _menu_game_entry=tk.Entry()
@@ -994,7 +994,7 @@ class band_game:
         _menu_game_choice_use=tk.Label(text='已用机会:')
         _menu_game_choice_use.place(x=1018,y=600,width=108,height=81)
         #定义选择难度按钮并自适应窗口大小
-        _menu_game_choice=tk.Button(text='选择难度',command=band_game.band_game_menu_game_choice)
+        _menu_game_choice=tk.Button(text='选择难度',borderwidth=0,command=band_game.band_game_menu_game_choice)
         _menu_game_choice.place(x=750,y=750,width=108,height=81)
         _menu_game.mainloop()
 
@@ -1013,7 +1013,7 @@ class band_game:
         #设置保存背景自适应窗口大小
         band_game.set_game_save_backgroud()
         #设置返回按钮及大小
-        _menu_game_save_back=tk.Button(text='返回',command=band_game.band_game_menu_game_save_back)
+        _menu_game_save_back=tk.Button(text='返回',borderwidth=0,command=band_game.band_game_menu_game_save_back)
         _menu_game_save_back.place(x=1500,y=900,width=108,height=81)
         #消息循环
         _menu_game_save.mainloop()
@@ -1035,19 +1035,19 @@ class band_game:
         #设置背景自适应主菜单窗口大小
         band_game.set_game_backgroud()
         #设置游戏的返回按钮并自适应主菜单窗口大小
-        _menu_game_back=tk.Button(text='返回',command=band_game.band_game_menu_game_back)
+        _menu_game_back=tk.Button(text='返回',borderwidth=0,command=band_game.band_game_menu_game_back)
         _menu_game_back.place(x=1500,y=900,width=108,height=81)
         #设置游戏的设置按钮并自适应窗口大小
-        _menu_game_setup=tk.Button(text='设置',command=band_game.band_game_menu_game_setup)
+        _menu_game_setup=tk.Button(text='设置',borderwidth=0,command=band_game.band_game_menu_game_setup)
         _menu_game_setup.place(x=75,y=900,width=108,height=81)
         #设置游戏的存取游戏按钮并自适应窗口大小
-        _menu_game_save=tk.Button(text='存取游戏',command=band_game.band_game_menu_game_save)
+        _menu_game_save=tk.Button(text='存取游戏',borderwidth=0,command=band_game.band_game_menu_game_save)
         _menu_game_save.place(x=450,y=900,width=108,height=81)
         #设置游戏的读取游戏按钮并自适应窗口大小
-        _menu_game_load=tk.Button(text='读取游戏',command=band_game.band_game_menu_game_load)
+        _menu_game_load=tk.Button(text='读取游戏',borderwidth=0,command=band_game.band_game_menu_game_load)
         _menu_game_load.place(x=1125,y=900,width=108,height=81)
         #定义一个开始按钮并自适应窗口大小
-        _menu_game_start=tk.Button(text='开始',command=band_game.band_game_menu_game_start)
+        _menu_game_start=tk.Button(text='开始',borderwidth=0,command=band_game.band_game_menu_game_start)
         _menu_game_start.place(x=750,y=900,width=108,height=81)
         #定义一个输入框并自适应窗口大小
         _menu_game_entry=tk.Entry()
@@ -1074,7 +1074,7 @@ class band_game:
         _menu_game_choice_use=tk.Label(text='已用机会:')
         _menu_game_choice_use.place(x=1018,y=600,width=108,height=81)
         #定义选择难度按钮并自适应窗口大小
-        _menu_game_choice=tk.Button(text='选择难度',command=band_game.band_game_menu_game_choice)
+        _menu_game_choice=tk.Button(text='选择难度',borderwidth=0,command=band_game.band_game_menu_game_choice)
         _menu_game_choice.place(x=750,y=750,width=108,height=81)
         _menu_game.mainloop()
 
@@ -1093,12 +1093,12 @@ class band_game:
         #设置保存背景自适应窗口大小
         band_game.set_game_load_backgroud()
         #设置返回按钮及大小
-        _menu_game_load_back=tk.Button(text='返回',command=band_game.band_game_menu_game_load_back)
+        _menu_game_load_back=tk.Button(text='返回',borderwidth=0,command=band_game.band_game_menu_game_load_back)
         _menu_game_load_back.place(x=1500,y=900,width=108,height=81)
         #消息循环
         _menu_game_load.mainloop()
 
-    #定义保存返回函数
+    #定义读取返回函数
 
     def band_game_menu_game_load_back():
 
@@ -1115,19 +1115,19 @@ class band_game:
         #设置背景自适应主菜单窗口大小
         band_game.set_game_backgroud()
         #设置游戏的返回按钮并自适应主菜单窗口大小
-        _menu_game_back=tk.Button(text='返回',command=band_game.band_game_menu_game_back)
+        _menu_game_back=tk.Button(text='返回',borderwidth=0,command=band_game.band_game_menu_game_back)
         _menu_game_back.place(x=1500,y=900,width=108,height=81)
         #设置游戏的设置按钮并自适应窗口大小
-        _menu_game_setup=tk.Button(text='设置',command=band_game.band_game_menu_game_setup)
+        _menu_game_setup=tk.Button(text='设置',borderwidth=0,command=band_game.band_game_menu_game_setup)
         _menu_game_setup.place(x=75,y=900,width=108,height=81)
         #设置游戏的存取游戏按钮并自适应窗口大小
-        _menu_game_save=tk.Button(text='存取游戏',command=band_game.band_game_menu_game_save)
+        _menu_game_save=tk.Button(text='存取游戏',borderwidth=0,command=band_game.band_game_menu_game_save)
         _menu_game_save.place(x=450,y=900,width=108,height=81)
         #设置游戏的读取游戏按钮并自适应窗口大小
-        _menu_game_load=tk.Button(text='读取游戏',command=band_game.band_game_menu_game_load)
+        _menu_game_load=tk.Button(text='读取游戏',borderwidth=0,command=band_game.band_game_menu_game_load)
         _menu_game_load.place(x=1125,y=900,width=108,height=81)
         #定义一个开始按钮并自适应窗口大小
-        _menu_game_start=tk.Button(text='开始',command=band_game.band_game_menu_game_start)
+        _menu_game_start=tk.Button(text='开始',borderwidth=0,command=band_game.band_game_menu_game_start)
         _menu_game_start.place(x=750,y=900,width=108,height=81)
         #定义一个输入框并自适应窗口大小
         _menu_game_entry=tk.Entry()
@@ -1154,7 +1154,7 @@ class band_game:
         _menu_game_choice_use=tk.Label(text='已用机会:')
         _menu_game_choice_use.place(x=1018,y=600,width=108,height=81)
         #定义选择难度按钮并自适应窗口大小
-        _menu_game_choice=tk.Button(text='选择难度',command=band_game.band_game_menu_game_choice)
+        _menu_game_choice=tk.Button(text='选择难度',borderwidth=0,command=band_game.band_game_menu_game_choice)
         _menu_game_choice.place(x=750,y=750,width=108,height=81)
         _menu_game.mainloop()
 
@@ -1173,7 +1173,7 @@ class band_game:
         #设置设置背景自适应窗口大小
         band_game.set_setup_backgroud()
         #定义返回按钮及大小
-        _menu_setup_back=tk.Button(text='返回',command=band_game.band_game_menu_setuup_back)
+        _menu_setup_back=tk.Button(text='返回',borderwidth=0,command=band_game.band_game_menu_setuup_back)
         _menu_setup_back.place(x=1500,y=900,width=108,height=81)
         #消息循环
         _menu_setup.mainloop()
@@ -1199,7 +1199,7 @@ class band_game:
         #设置保存背景自适应窗口大小
         band_game.set_save_backgroud()
         #设置返回按钮及大小
-        _menu_save_back=tk.Button(text='返回',command=band_game.band_game_menu_save_back)
+        _menu_save_back=tk.Button(text='返回',borderwidth=0,command=band_game.band_game_menu_save_back)
         _menu_save_back.place(x=1500,y=900,width=108,height=81)
         #消息循环
         _menu_save.mainloop()
@@ -1225,7 +1225,7 @@ class band_game:
         #设置保存背景自适应窗口大小
         band_game.set_load_backgroud()
         #设置返回按钮及大小
-        _menu_load_back=tk.Button(text='返回',command=band_game.band_game_menu_load_back)
+        _menu_load_back=tk.Button(text='返回',borderwidth=0,command=band_game.band_game_menu_load_back)
         _menu_load_back.place(x=1500,y=900,width=108,height=81)
         #消息循环
         _menu_load.mainloop()
